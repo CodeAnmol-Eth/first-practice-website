@@ -1,0 +1,191 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            color: rgb(98, 51, 51);
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            background-color: beige;
+
+
+        }
+
+
+
+        main {
+            background-color: bisque;
+            height: 700px;
+            width: 100%;
+
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 150px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul li a {
+
+            text-decoration: none;
+            color: rgb(106, 41, 41);
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .nav ul li a:hover{
+            color: rgb(29, 53, 45);
+            transform: scale(1.1);
+        }
+
+        .hero {
+            height: 700px;
+
+            background-image: url(https://assets.gqindia.com/photos/69268ba9093fc6f26c120e31/16:9/w_1920,c_limit/HGE154.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            background-position: right;
+            justify-content: center;
+            align-items: left;
+
+            color: white;
+            text-align: left;
+
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-left: 100px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+
+        .top {
+
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+            height: 51px;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .movie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: beige;
+
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            text-align: center;
+            padding: 12px;
+            font-size: 20px;
+        }
+
+        @media(max-width:768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .card img {
+                height: 220px;
+            }
+
+            .about p {
+                height: 500px;
+            }
+
+        }
+
+        .about {
+            float: left;
+        }
+
+        .about h1 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            background-color: cadetblue;
+        }
+
+
+        .about img {
+            height: 500px;
+            width: 500px;
+            float: left;
+        }
+
+        .about p {
+            height: 500px;
+            text-align: left;
+            font-size: 25px;
+            background-color: beige;
+
+        }
+
+        span {
+            color: brown;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        #contact-section{
+          
+            background-color: beige;
+            width: 100%;
+              
+        }
+
+        #contact-section > h3{
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #contact-section >p{
+            font-size: 15px;
+            margin-left: 25px;
+        }
